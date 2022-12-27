@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-12-26T16:26:04.967+05:30"
+        cq:lastModifiedBy="admin"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/myproject/settings/wcm/templates/experience-fragment-web-variation-template"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="My Project Experience Fragment for Web"
+        sling:resourceType="myproject/components/structure/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <text
+                    jcr:created="{Date}2022-12-14T14:39:56.096+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-12-26T16:25:45.432+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="myproject/components/content/text"
+                    text="&lt;p>&lt;b>Text -1&amp;nbsp; Component in XF :&lt;/b> My brother Neil and I had a break in between jobs, giving us one night and 48 hours to get back into the mountains. We're lucky to live at the western entrance to the Uintas, a vast wilderness to explore, and also where we got our start in flyfishing. I've become so familiar with the land, that if feels like my home. Yet it's impossible to see it all. Using the maps to find a new place with a squiggly blue line that leads to some small blue dots is where it all starts. It's what we're all about.&lt;/p>&#xd;&#xa;"
+                    textIsRich="true"/>
+                <image
+                    jcr:created="{Date}2022-12-14T14:40:05.870+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-12-14T14:40:52.388+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="myproject/components/content/image"
+                    fileReference="/content/dam/core-components-examples/library/sample-assets/mountain-range.jpg"/>
+                <text_1988810916
+                    jcr:created="{Date}2022-12-14T14:40:16.147+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-12-26T16:26:04.886+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="myproject/components/content/text"
+                    text="&lt;p>&lt;b>Text - 2 Component in XF : &lt;/b>We rigged up our rods with some bushy dry flies and began leap frogging our way up the river, hitting every choice hole along the way&lt;/p>&#xd;&#xa;"
+                    textIsRich="true"/>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>

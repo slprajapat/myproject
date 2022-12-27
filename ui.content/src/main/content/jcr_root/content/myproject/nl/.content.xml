@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:allowedTemplates="/conf/we-retail/settings/wcm/templates/.*"
+        cq:conf="/conf/we-retail"
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2022-12-14T14:43:49.697+05:30"
+        cq:lastModifiedBy="admin"
+        cq:redirectTarget="/content/myproject/nl/us/en"
+        cq:siteOwner="admin"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="nl"
+        sling:resourceType="weretail/components/structure/page">
+        <image
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0">
+            <file/>
+        </image>
+    </jcr:content>
+    <en_nl/>
+    <en_be/>
+</jcr:root>

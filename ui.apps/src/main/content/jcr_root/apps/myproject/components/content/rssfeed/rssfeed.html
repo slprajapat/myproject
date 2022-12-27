@@ -1,0 +1,29 @@
+<div>
+	<h2>RSS Feed Details</h2>
+
+	<sly
+		data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+		data-sly-call="${clientlib.all @ categories=['myproject.components.rssfeed']}" />
+	<sly
+		data-sly-use.rssFeedModel="com.aem.myproject.core.models.ExternalRSSFeedModel" />
+	<sly
+		data-sly-use.feeds="com.aem.myproject.core.models.ManualFeedsModel" />
+	<sly
+		data-sly-test="${wcmmode.edit && (!rssFeedModel.feedList && !feeds.getFeedDetailsWithMap)}">
+	Please configure RSS Feed Component.. </sly>
+	<div class="container" data-sly-list.list="${rssFeedModel.feedList}">
+
+		<b>Title</b> : ${list.title}<br /> <b>Description</b>
+		:${list.description}<br /> <b>Publish Date</b> : ${list.pubdate}<br />
+
+		<br>
+	</div>
+	<div data-sly-test="${!rssFeedModel.feedList}">
+		<div class="container"
+			data-sly-list.item="${feeds.getFeedDetailsWithMap}">
+
+			<br /> <b>Title</b> : ${item.title} <br /> <b>Description</b> :
+			${item.description} <br /> <b>Publish Date</b> : ${item.pubdate} <br />
+		</div>
+	</div>
+</div>

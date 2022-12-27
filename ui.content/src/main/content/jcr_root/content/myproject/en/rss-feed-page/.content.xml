@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-12-27T11:40:31.935+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/myproject/settings/wcm/templates/content-page-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="RSS Feed Page"
+        sling:resourceType="myproject/components/structure/page">
+        <root
+            jcr:lastModified="{Date}2022-12-26T19:07:47.947+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <experiencefragment-header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="myproject/components/content/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/myproject/us/en/site/header/master"/>
+            <responsivegrid
+                jcr:lastModified="{Date}2022-12-26T17:22:38.773+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <rssfeed
+                    jcr:created="{Date}2022-12-26T20:20:31.700+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-12-27T11:40:31.931+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="myproject/components/content/rssfeed"
+                    numberOfFeeds="4"
+                    rssFeedUrl="https://sports.ndtv.com/rss/cricket">
+                    <feedDetails jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            description="Skipper KL Rahul's never looked assured in the middle and was dismissed on the front foot in the two innings. His place in the first Test against Australia in February looks far from certain."
+                            pubdate="{Date}2022-12-27T00:00:00.000+05:30"
+                            title="Team India: KL Rahul's Approach, Sane Selection Calls Are Need Of The Hour"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            description="After ending the first Test in just two days, Australia and South Africa are facing each other in the second Test of the three-match series in Melbourne1"
+                            pubdate="{Date}2022-12-18T00:00:00.000+05:30"
+                            title="Watch: Marnus Labuschagne Takes Stunning Catch To Dismiss Khaya Zonda In Boxing Day Test"/>
+                    </feedDetails>
+                </rssfeed>
+            </responsivegrid>
+            <experiencefragment-footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="myproject/components/content/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/myproject/us/en/site/footer/master"/>
+        </root>
+    </jcr:content>
+</jcr:root>

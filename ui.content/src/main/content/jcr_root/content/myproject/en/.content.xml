@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-12-26T19:31:11.280+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/myproject/settings/wcm/templates/content-page-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="en"
+        sling:resourceType="myproject/components/structure/page">
+        <root
+            jcr:lastModified="{Date}2022-12-26T19:07:47.947+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <experiencefragment-header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="myproject/components/content/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/myproject/us/en/site/header/master"/>
+            <responsivegrid
+                jcr:lastModified="{Date}2022-12-26T17:22:38.773+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+            <experiencefragment-footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="myproject/components/content/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/myproject/us/en/site/footer/master"/>
+        </root>
+    </jcr:content>
+    <rss-feed-page/>
+</jcr:root>
